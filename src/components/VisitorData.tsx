@@ -8,8 +8,6 @@ const VisitorData: FunctionComponent = () => {
     extendedResult: true,
   });
 
-  console.log(data);
-
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -18,7 +16,7 @@ const VisitorData: FunctionComponent = () => {
   }
 
   if (data) {
-    // perform some logic based on the visitor data
+    console.log(data);
     return (
       <div>
         <div>Welcome {data.visitorFound ? `back ${data.visitorId}` : ""}!</div>
